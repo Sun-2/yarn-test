@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import {configureStore} from "@reduxjs/toolkit";
 
-const store = configureStore();
+const store = configureStore({
+  reducer: (state, action) => {}
+});
 function App() {
   return (
     <div className="App">
